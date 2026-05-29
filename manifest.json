@@ -1,48 +1,15 @@
+      
+
+
 {
 
 
 
+  "short_name": "FREE TIME EARN",
 
 
 
-
-
-
-
-
-
-
-
-
-  "short_name": "RESELL PONNO",
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  "name": "RESELL PONNO LTD",
-
-
-
-
-
-
-
-
-
-
-
-
+  "name": "FREE TIME EARN",
 
 
 
@@ -50,20 +17,62 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     {
 
+
+
+      "src": "https://raw.githubusercontent.com/mdzahidhasanofficial29-ui/resellponno/refs/heads/main/IMG_20260524_131926_680.jpg",
+      "type": "image/jpeg",
+
+
+
+
+      "sizes": "512x512"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+"start_url": "./index.html",
+
+
+
+  "background_color": "#FFFFFF",
+
+
+
+  "display": "standalone",
+
+
+
+  "scope": "./",
+
+
+
+  "theme_color": "#FFFFFF"
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
