@@ -3,8 +3,9 @@
   "name": "RESELL PONNO LTD",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/mdzahidhasanofficial29-ui/resellponno/refs/heads/main/IMG_20260524_131926_680.jpg",
+            "src": "https://raw.githubusercontent.com/mdzahidhasanofficial29-ui/resellponno/refs/heads/main/IMG_20260524_131926_680.jpg",
       "type": "image/jpeg",
+      
       "sizes": "512x512"
     }
   ],
