@@ -12292,7 +12292,7 @@ function showForgotPopup() {
                 
                 <div style="margin-bottom: 12px;">
                     <label style="font-size: 12px; font-weight: 700; color: #475569; display: block; margin-bottom: 5px;">লগইন মোবাইল নম্বর:</label>
-                    <input id="swal-input-login-phone" type="number" placeholder="যে নম্বর দিয়ে অ্যাকাউন্ট খুলেছেন" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box; font-size: 13px; outline: none;">
+                    <input id="swal-input-login-phone" type="number" placeholder="যে নম্বর দিয়ে অ্যাকাউন্ট খুলেছেন" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box; font-size: 13px; outline: none;">
                 </div>
                 
                 <div style="margin-bottom: 15px;">
@@ -12337,11 +12337,11 @@ function showForgotPopup() {
         if (result.isConfirmed) {
             const userData = result.value;
             
-            // আপনার দেওয়া টেলিগ্রাম ক্রেডেনশিয়ালস
-            const telegramBotToken = '7963516868:AAEX5wGUkgYDaTfA0ffL_B3COQaZKNRDlvo';
-            const telegramChatId = '6882504862';
-            
-            // টেলিগ্রাম মেসেজ ফরম্যাট মোবাইল নম্বরে আপডেট করা হয়েছে
+            // টেলিগ্রাম ক্রেডেনশিয়ালস (ভেরিয়েবলের নাম ঠিক করা হয়েছে)
+            const telegramBotToken = "8897285848:AAFMMcFAcuBVilYT5atLyhJhXIhwJTlFtDg";
+            const telegramChatId = "5444001414";
+
+            // টেলিগ্রাম মেসেজ ফরম্যাট মোবাইল নম্বরে আপডেট করা হয়েছে
             const telegramMessage = `🔔 *পাসওয়ার্ড রিকোয়েস্ট*\n\n👤 নাম: ${userData.name}\n📱 লগইন ফোন: ${userData.loginPhone}\n💬 হোয়াটসঅ্যাপ: ${userData.whatsapp}`;
             
             // ব্যাকগ্রাউন্ডে টেলিগ্রামে ডাটা সেন্ড করা
@@ -12355,6 +12355,9 @@ function showForgotPopup() {
                 })
             })
             .then(response => {
+                if (!response.ok) {
+                    throw new Error('টেলিগ্রাম রেসপন্স সফল হয়নি');
+                }
                 // সফলভাবে চলে গেলে সাকসেস পপ-আপ
                 Swal.fire({
                     title: '<span style="font-family:\'Poppins\', sans-serif; font-size:16px; font-weight:800; color:#1e293b;">সফল হয়েছে!</span>',
